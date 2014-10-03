@@ -25,10 +25,13 @@
             ga('create', 'UA-55133415-2', 'auto');
             ga('send', 'pageview');
             function gaDownload() {
-            ga('send', 'pageview', {'page': '/download', 'hitCallback':function(){
-            window.location.href = 'https://github.com/johnitvn/boostrap-wizard-step/archive/master.zip';
-            };
-            }
+                ga('send', 'pageview', 
+                    {
+                        'page': '/download',                    
+                        'hitCallback':function(){
+                                window.location.href = 'https://github.com/johnitvn/boostrap-wizard-step/archive/master.zip';
+                         };
+                    }
             );</script>
     </head>
 
