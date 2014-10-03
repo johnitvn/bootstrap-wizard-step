@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Bootstrap wizard step jquery plugin">
+        <meta name="author" content="John Martin">
+        <title>Bootstrap Wizard Step| John Martin</title>
+        <link href="/assets/bootstrap.min.css" rel="stylesheet">
+        <link href="/assets/awesome.min.css" rel="stylesheet">
+        <link href="/assets/style.css" rel="stylesheet">      
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-55133415-2', 'auto');
+            ga('send', 'document');
+        </script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-example">
+        <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="navbar-brand">Bootstrap Wizard Step</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/document.html">Document</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="https://github.com/johnitvn?tab=repositories">Github<i class="fa fa-github" style="font-size: 16px;margin-left: 4px"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="bs-docs-header" id="content">
+            <div class="container">
+                <h1>Document</h1>
+                <p>Bootstrap Wizard Step maximize to use css from bootstrap. We are using style already in bootstrap for tab </p>              
+                <a href="/about.html"> 
+                    <div id="carbonads-container">
+                        <div class="carbonad">
+                            <div id="promotion">
+                                <span>
+                                    <span class="carbonad-image"><img src="/assets/avatar.jpg" class="avatar carbonad-image carbonad-img img-circle"></span>
+                                    <span class="carbonad-text">Freelance developer?</span>
+                                    <span class="carbonad-tag">I'm available for freelance work</span>     
+                                    <span class="carbonad-sign">Click to see about me</span>                    
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div class="col-md-12" role="main">
+
+                    <div class="bs-docs-section">
+                        <h2 id="tabs-examples">Examples</h2>
+                        <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.</p>
+                        <div class="bs-example">
+                            <div data-toggle="bootstrap-wizard-step" 
+                                 data-next="#next" data-previous="#previous" data-tab="#wizard-tab" data-content="#wizard-content" data-start="0">
+                                <ul id="wizard-tab" class="nav nav-tabs">
+                                    <li><a href="#step1">Step 1</a></li>
+                                    <li><a href="#step2">Step 2</a></li>
+                                    <li><a href="#step3">Step 3</a></li>
+                                    <li><a href="#step4">Step 4</a></li>            
+                                </ul>
+                                <div id="wizard-content" class="tab-content">
+                                    <div class="tab-pane" id="step1">
+                                        <div class="text-center bg-success" style="padding: 50px;margin-bottom: 20px">
+                                            Step 1
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="step2">
+                                        <div class="text-center bg-info" style="padding: 50px;margin-bottom: 20px">
+                                            Step 2
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="step3">
+                                        <div class="text-center bg-warning" style="padding: 50px;margin-bottom: 20px">
+                                            Step 3
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="step4">
+                                        <div class="text-center bg-danger" style="padding: 50px;margin-bottom: 20px">
+                                            Step 4
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-actions text-right with-padding">
+                                    <button type="button" id="previous" class="btn btn-primary">Previous</button>
+                                    <button type="button" id="next"  class="btn btn-primary">Next</button>
+                                </div>
+                            </div>
+                        </div><!-- /example -->
+
+
+                        <h2 id="tabs-usage">Usage</h2>
+                        <p>Enable Boostrap Wizard Step  via JavaScript with default options:</p>
+
+                        <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+                        <div class="highlight">
+                            <pre>
+                                <code class="js">
+$(<span class="s1">'[data-toggle="boostrap-wizard-step"]'</span>).boostrapWizardStep();
+                                </code>
+                            </pre>
+                        </div>
+
+                        <p>You can enable via JavaScript with options:</p>
+
+                        <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+                        <div class="highlight">
+                            <pre>
+                                <code class="js">
+$(<span class="s1">'[data-toggle="boostrap-wizard-step"]'</span>).boostrapWizardStep({
+    <span class="text-success">startStep</span>: <span class="text-warning">0</span>,
+    <span class="text-success">onNextStep</span>: <span class="text-primary">callback</span>,
+    <span class="text-success">onBackStep</span>: <span class="text-primary">callback</span>,
+    <span class="text-success">onJumpBack</span>: <span class="text-primary">callback</span>,
+    <span class="text-success">tabIdentifier</span>:  <span class="text-warning">"#wizard-tab"</span>,
+    <span class="text-success">contentIdentifier</span>:  <span class="text-warning">"#wizard-content"</span>,
+    <span class="text-success">btnNextIdentifier</span>:  <span class="text-warning">"#next"</span>,
+    <span class="text-success">btnPreviousIdentifier</span>:  <span class="text-warning">"#previous"</span>
+});
+                                </code>
+                            </pre>
+                        </div>
+
+                        <h3>Markup</h3>
+
+                        <p>You can activate  boostrap wizard step without writing any JavaScript by simply specifying
+                            <code>data-toggle=="bootstrap-wizard-step"</code>. And you can overide default config with <code>data-next="#next"</code>,<code>data-previous="#previous"</code>,<code>data-tab="#wizard-tab"</code>,<code>data-content="#wizard-content"</code>,<code>data-start="0"</code></p>
+
+                        <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+                        <div class="highlight">
+                            <pre>
+                              <code class="html">
+<span class="nt">&lt;ul</span> <span class="na">data-toggle==</span><span class="s">"bootstrap-wizard-step"</span> <span class="na">data-next=</span><span class="s">"#next"</span> <span class="na">data-previous=</span><span class="s">"#previous"</span> <span class="na">data-tab=</span><span class="s">"#wizard-tab"</span> <span class="na">data-content=</span><span class="s">"#wizard-content"</span> <span class="na">data-start=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Wizard nav tabs --&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"wizard-tab" </span><span class="na">class=</span><span class="s">"nav nav-tabs"</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#home"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#profile"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#messages"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Messages<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#settings"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="c">&lt;!-- Wizard tab panes --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"wizard-content" </span><span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-pane active"</span> <span class="na">id=</span><span class="s">"home"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"profile"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"messages"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"settings"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code>
+                            </pre>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <h3>Options</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th style="width: 150px;">Option Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>startStep</td>
+                            <td>Set step for start.</td>
+                        </tr>
+                        <tr>
+                            <td>onNextStep</td>
+                            <td>Callback when user press next button.</td>
+                        </tr>
+                        <tr>
+                            <td>onBackStep</td>
+                            <td>Callback when user press back button.</td>
+                        </tr>
+                        <tr>
+                            <td>onJumpBack</td>
+                            <td>Callback when user jump back to before step</td>
+                        </tr>       
+                        <tr>
+                            <td>tabIdentifier</td>
+                            <td>The identifier of tab for find element. You must add <code>#</code> for id and <code>.</code> for class</td>
+                        </tr>   
+                        <tr>
+                            <td>contentIdentifier</td>
+                            <td>The identifier of content for find element. You must add <code>#</code> for id and <code>.</code> for class</td>
+                        </tr>   
+                        <tr>
+                            <td>btnNextIdentifier</td>
+                            <td>The identifier of next button for find element. You must add <code>#</code> for id and <code>.</code> for class</td>
+                        </tr>   
+                        <tr>
+                            <td>btnPreviousIdentifier</td>
+                            <td>The identifier of previous button for find element. You must add <code>#</code> for id and <code>.</code> for class</td>
+                        </tr>                         
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Events</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th style="width: 150px;">Event Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>next.bs.wizard</td>
+                            <td>This event fires on user press next button. May have 2 parameters is event and current index </td>
+                        </tr>
+                        <tr>
+                            <td>previous.bs.wizard</td>
+                            <td>This event fires on user press previous button. May have 2 parameters is event and current index</td>
+                        </tr>
+                        <tr>
+                            <td>jumpback.bs.wizard</td>
+                            <td>This event fires on user click to tab for jump back before step. May have 3 parameters is event, current index and jump to index </td>
+                        </tr>                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+            <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#wizard'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'next.bs.wizard'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">,<span class="nx">currentIndex</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">});</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#wizard'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'previous.bs.wizard'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">,<span class="nx">currentIndex</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">});</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#wizard'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'jumpback.bs.wizard'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">,<span class="nx">currentIndex</span>,<span class="nx">jumpToIndex</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">});</span></code></pre></div>
+                                    <script src="/assets/jquery.min.js"></script>
+                                    <script src="/assets/bootstrap.min.js"></script> 
+                                    <script src="/assets/zeroclipboard.js"></script>
+                                    <script src="/source/wizardstep.min.js"></script>
+
+                                    <script>
+
+                                    </script>
+                                    </body>
+                                    </html>
