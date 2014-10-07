@@ -15,15 +15,18 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
         var from = "EUR";
         var to = "MYR"
 
-        function google_currency_api(target, amount, from, to) {
+        function currency(target, amount, from, to) {
             $.ajax({
                 type: "POST",
-                url: "//rate-exchange.appspot.com/currency?" + "amount=" + amount + "&from=" + from + "&to=",
+                crossDomain: true,
+                dataType: 'jsonp',
+                url: "//rate-exchange.appspot.com/currency?from=" + from + "&to=" + to,
                 success: function(data) {
-                    $(target).html(data + "&nbsp;" + to);
+                    $(target).html(parseFloat(data.rate).toFixed(2) + "&nbsp;" + to);
                 }
             });
         }
+        
         this.each(function() {
             var html = '<tr class="title"><th class="l">' + titleLeft + '</th><th class="r">' + titleRight + '</th></tr>';
             html += '<tr class="times">';
@@ -35,7 +38,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
             $(this).find(".times .timeLeft").clock({offset: timeLeft, type: 'digital', format: timeType});
             $(this).find(".times .timeRight").clock({offset: timeRight, type: 'digital', format: timeType});
             $(this).find(".currencies>.from").html(among + "&nbsp;" + from);
-            google_currency_api($(this).find(".currencies>.to"), among, from, to);
+            currency($(this).find(".currencies>.to"), among, from, to);
         });
     };
 }(jQuery));
