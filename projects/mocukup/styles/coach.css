@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+@media screen and (orientation: landscape) {
+	.portrait-coach{	display:none!important;	}
+	.landscape-coach{	display:block!important;	}
+}
+
+.portrait-coach{	position:absolute; left:0px; right:0px; top:0px; bottom:0px;	height:100%;}
+.landscape-coach{ 	position:absolute; left:0px; right:0px; top:0px; bottom:0px;	height:100%;	display:none;}
+
+.page-coach h3{
+	color:#FFFFFF;
+	font-weight:500;
+}
+
+.page-coach p{
+	color:#FFFFFF;
+	font-family:'Dosis', sans-serif;
+	opacity:0.8;
+}
+
+.page-coach{
+	display:none;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	position:fixed;
+	height:100%;
+	background-color:rgba(0,0,0,0.85);
+	z-index:999999;
+	top:0px;
+}
+
+.coach-arrow{
+	opacity:0.8;
+	position:absolute;
+	color:#FFFFFF;
+	width:300px;
+	height:200px;
+	display:block;
+	background-repeat:no-repeat;
+}
+
+.arrow1{	background-image:url(../images/coach/arrow1.png);	}
+.arrow2{	background-image:url(../images/coach/arrow2.png);	background-position:120px 0px;}
+.arrow3{	background-image:url(../images/coach/arrow3.png);	background-position:0px 20px;}
+.arrow4{	background-image:url(../images/coach/arrow4.png);	background-position:120px 20px;}
+.arrow5{	background-image:url(../images/coach/arrow5.png);	background-position:120px 0px;}
+.arrow6{	background-image:url(../images/coach/arrow6.png);	background-position:120px 0px;}
+.arrow7 {	background-image:url(../images/coach/arrow7.png); 	background-position:120px 0px;}
+.arrow8 {	background-image:url(../images/coach/arrow8.png); 	background-position:120px 0px; }
+.arrow9 {	background-image:url(../images/coach/arrow9.png); 	}
+.arrow10 {	background-image:url(../images/coach/arrow10.png); 	}
+.arrow11 {	background-image:url(../images/coach/arrow11.png); background-position:0px 10px;}
+.arrow12 {	background-image:url(../images/coach/arrow12.png); background-position:-35px 0px; }
+.arrow13 {	background-image:url(../images/coach/arrow13.png); background-position:120px; 0px; }
+.arrow14 {	background-image:url(../images/coach/arrow14.png); }
+.arrow15{ 	background-image:url(../images/coach/arrow15.png); }
+.arrow16{ 	background-image:url(../images/coach/arrow16.png);  background-position:0 70px;}
+.arrow17{ 	background-image:url(../images/coach/arrow17.png);  background-position:0 40px; }
+.arrow18{ 	background-image:url(../images/coach/arrow18.png);	background-position:100px 0px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

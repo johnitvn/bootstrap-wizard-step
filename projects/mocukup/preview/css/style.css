@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+.wrapper-landscape{
+	width:960px;
+	margin:auto;
+}
+
+
+.wrapper{
+	padding-top:50px;
+	width:960px;
+	margin:auto;
+}
+
+.iphone-portrait{
+	margin-left:280px;	
+}
+
+.go-landscape{
+	position:absolute;
+	margin-left:670px;
+	margin-top:250px;
+}
+
+.go-tablet{
+	position:absolute;
+	margin-top:240px;
+	margin-left:90px;
+}
+
+.go-portrait{
+	z-index:999999;
+	position:absolute;
+	margin-top:100px;
+	margin-left:300px;
+}
+
+
+*{
+	border:0px;
+	padding:0px;
+	margin:0px;
+}
+
+.iphone-landscape{
+	position:absolute;
+	padding-left:100px;
+	padding-top:200px;
+	z-index:999;
+}
+
+.iphone-landscape-frame{
+	position:absolute;
+	z-index:9999;
+	margin-top:-357px;
+	margin-left:116px;
+}
+
+.hide-scroll-2{
+	background-image:url(../images/fixscroll-2.png);
+	width:117px;
+	height:379px;
+	position:absolute;
+	margin-top:-388px;
+	margin-left:685px;
+	z-index:99999;
+}
+
+.hide-scroll-3{
+	background-image:url(../images/fixscroll-3.png);
+	width:773px;
+	height:27px;
+	position:absolute;
+	margin-top:-35px;
+	margin-left:14px;
+	z-index:99999;
+}
+
+
+body{
+	background-image:url(../images/bright_squares.png);
+	background-repeat:repeat;
+}
+
+
+.hide-scroll{
+	background-image:url(../images/fixscroll.png);
+	position:absolute;
+	height:779px;
+	width:29px;
+	margin-left:352px;
+	margin-top:11px;
+	z-index:99999;
+}
+
+.iphone{
+	position:absolute;
+	z-index:999;
+	margin-left:30px;
+	margin-top:115px;
+}
+
+.iphone-pic{
+	position:absolute;
+}
