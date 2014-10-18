@@ -231,3 +231,41 @@
     color: #f00;
 }
 
+.icon{
+    font-size: 14px;
+    color:#fff;
+    line-height: 50px;
+    width: 50px;
+}
+
+.icon-lg{
+    font-size: 24px;
+    line-height: 60px;
+    width: 60px;
+}
+
+.icon-sm{
+    font-size: 18px;
+    line-height: 40px;
+    width: 40px;
+}
+
+.icon-circle{border-radius: 50%}
+.icon-success{background: #5cb85c}
+.icon-warning{background: #f0ad4e}
+.icon-info{background: #5bc0de}
+.icon-primary{background: #5cb85c}
+.icon-danger{background: #d9534f}
+
+.payment_successful {
+    border-top: 2px solid #ddd;
+}
+.payment_successful>th{
+    line-height: 40px;    
+}
+
+.payment_successful>th>span{
+    margin-right: 20px;
+}
+
+
