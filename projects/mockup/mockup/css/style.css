@@ -1,0 +1,29 @@
+.navbar{
+    height: 60px;
+    border-radius: 0;
+    border:none;
+}
+#content{
+    margin-bottom:60px;
+}
+
+.img-header{
+    max-width:100%;
+    margin-top: 74px;
+    margin-bottom: 12px;
+}
+.brand-title{
+    line-height: 60px;
+    font-size: 16px;
+    color: #f0f0f0 !important;
+}
+.navbar-bottom{
+    background: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+}
+.row-pading{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
