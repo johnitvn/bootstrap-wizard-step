@@ -17,6 +17,14 @@
     font-size: 16px;
     color: #f0f0f0 !important;
 }
+@media (min-width: 768px){
+    .brand-title{
+        line-height: 60px;
+        font-size: 16px;
+        color: #f0f0f0 !important;
+    }
+}
+
 .navbar-bottom{
     background: #fff;
     padding-left: 15px;
