@@ -5,9 +5,9 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">  
     <link href="css/style.css" rel="stylesheet" type="text/css">  
+
 </head>
 <body>
-
     <header class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -18,22 +18,28 @@
     <div class="container">
         <img class="img-header" src="images/header.png" />
     </div>
-    <div class="container row-pading" id="content">
-        <div class="page-header">
-            <h1>Page listing<br><small>Select page to view demo</small></h1>
+    <form role="form">
+        <!--Content-->
+        <div class="container" id="content">
+            <div class="text-center">
+                <img style="width: 66px; height: 66px; background: red" class="img-circle">
+            </div>
+            <h4 class="text-center">
+                Sorry but the<br>
+                game is closed at this time
+            </h4>           
+            <br>
+            <div class="text-center">
+                <a href="#">Click here for game times</a>
+            </div>
         </div>
-        <div class="panel panel-success">
-            <div class="panel-heading">Powerball Flow- Phase 1C</div>
-            <ul class="list-group">
-                <li class="list-group-item"><a href="1.html">Age Verification Rejected If Underage</a></li>
-                <li class="list-group-item"><a href="2.html">Provide Personal Detail</a></li>
-                <li class="list-group-item"><a href="3.html">Age Verification Accept</a></li>
-                
-                
-                <li class="list-group-item"><a href="14.html">Game closed</a></li>
-            </ul>
-        </div>
-    </div>
+        <!--Bottom button-->
+        <header class="navbar navbar-bottom navbar-fixed-bottom">
+            <button class="btn btn-default btn-lg col-xs-offset-4 col-xs-4">Back</button>
+        </header>
+        <!--End bottom button-->
+        <!--End Content-->
+    </form>
 
 
     <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>

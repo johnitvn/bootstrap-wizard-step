@@ -35,17 +35,20 @@
 }
 .btn-default {
     background-color: #fff;
-    border-color: #e0e0e0;
+    border-color: #adc22f;
+    color:#adc22f;
 }
 .btn-default:hover,
 .btn-default:focus {
-    background-color: #e0e0e0;
+    background-color: #C8F7C5;
     background-position: 0 -15px;
+    color:#6C7A89;
 }
 .btn-default:active,
 .btn-default.active {
-    background-color: #e0e0e0;
-    border-color: #dbdbdb;
+    background-color: #C8F7C5;
+    border-color: #adc22f;
+    color:#6C7A89;
 }
 .btn-default:disabled,
 .btn-default[disabled] {
