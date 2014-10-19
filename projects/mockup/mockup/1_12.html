@@ -6,7 +6,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">  
     <link href="css/style.css" rel="stylesheet" type="text/css">  
- 
+
 </head>
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top">
@@ -26,36 +26,51 @@
                 Powerball<br>Quickpick</h3>
             </div>
             <div class="row-pading">
-                <div class="btn-group btn-block fill-split">
-                    <div class="leadcontainer">
-                        <a class="btn btn-primary dropdown-lead  dropdown-toggle"  data-toggle="dropdown"  href="#">
-                            + Choose Number of boards
-                        </a>                      
-                    </div>
-                    <a class="btn btn-primary dropdown-append" href="#">    
-                        &nbsp;
-                    </a>                   
-                </div>  
-                <table class="table table-bordered pick-board-table hidden" >
-                    <tbody>
-                        <tr>
-                            <td><span>1</span></td>
-                            <td><span>2</span></td>
-                        </tr>
-                        <tr>
-                            <td><span>3</span></td>
-                            <td><span>4</span></td>
-                        </tr>
-                        <tr>
-                            <td><span>5</span></td>
-                            <td><span>6</span></td>
-                        </tr> 
-                        <tr>
-                            <td><span>7</span></td>
-                            <td><span>8</span></td>
-                        </tr> 
-                    <tbody>
-                </table>
+                <div class="relative">
+                    <div class="btn-group btn-block fill-split">
+                        <div class="leadcontainer">
+                            <a class="btn btn-primary dropdown-lead  dropdown-toggle"  data-toggle="dropdown"  href="#">
+                                + Choose Number of boards
+                            </a>                      
+                        </div>
+                        <a class="btn btn-primary dropdown-append" href="#">    
+                            &nbsp;
+                        </a>                        
+                    </div>                 
+                    <table class="table table-bordered pick-board-table hidden" >
+                        <tbody>
+                            <tr>
+                                <td><span>1</span></td>
+                                <td><span>2</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>3</span></td>
+                                <td><span>4</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>5</span></td>
+                                <td><span>6</span></td>
+                            </tr> 
+                            <tr>
+                                <td><span>7</span></td>
+                                <td><span>8</span></td>
+                            </tr> 
+                        <tbody>
+                    </table>    
+                </div>
+            </div>
+            <div class="lotto-add">
+                <div></div>
+                <div>@ R1.50</div>
+            </div>
+
+            <div class="pull-left lotto-add">
+                <div>Add Lotto+</div>
+                <div>@ R1.50</div>
+            </div>
+            <div class="pull-left lotto-checkbox">
+                <input type="checkbox" class="hidden">
+                <a class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></a>
             </div>
             <!--Bottom button-->
             <header class="navbar navbar-bottom navbar-fixed-bottom">
@@ -63,7 +78,8 @@
                 <button class="btn btn-primary btn-lg pull-right col-xs-5">Next</button>
             </header>
             <!--End bottom button-->
-            <!--End Content-->
+        </div>
+        <!--End Content-->
     </form>
 
 
@@ -79,6 +95,10 @@
             $(".fill-split>.dropdown-append").html($(this).html());
             $(".pick-board-table").toggleClass("hidden");
         })
+        $(".lotto-checkbox > .btn").click(function() {
+            console.log(this);
+            $(this).find("span").toggleClass("glyphicon-ok");
+        });
     </script>
 </body>
 </html>
