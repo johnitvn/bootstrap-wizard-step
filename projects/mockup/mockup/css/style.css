@@ -264,8 +264,31 @@
     line-height: 40px;    
 }
 
+
+
+.loto-ball{
+    width: 25px;
+    height: 25px;
+    margin: 2px 0px;
+}
+
+table.loto-board{
+    width: 100%;
+}
+table.loto-board> tr>td:first-child{
+    width: 40%
+}
+table.loto-board tr>td:last-child{
+    width: 60%
+}
 .payment_successful>th>span{
     margin-right: 20px;
 }
 
+table.payment-table tr>td:first-child{
+    width: 40%
+}
 
+table.payment-table tr>td:last-child{
+    width: 60%
+}
