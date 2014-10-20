@@ -167,6 +167,21 @@
     background-color: #e0e0e0;
     background-image: none;
 }
+
+.has-primary .input-group-addon{
+    border-color: #adc22f;
+    background: #fff;
+    color: #adc22f;
+}
+
+
+.has-primary .form-control {
+    border-radius: 2px;
+    border-color: #adc22f;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 .btn-primary {
     background: #adc22f;
     border-color: #adc22f;
@@ -186,6 +201,7 @@
     background-color: #889922;
     border-color: #889922;
 }
+
 
 .btn-primary:disabled,
 .btn-primary[disabled] {
@@ -272,6 +288,9 @@
     background-repeat: repeat-x;
     border-color: #b92c28;
 }
+
+
+
 .btn-danger:hover,
 .btn-danger:focus {
     background-color: #c12e2a;
