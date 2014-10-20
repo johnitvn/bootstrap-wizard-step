@@ -151,7 +151,8 @@
 }
 .btn-default:hover,
 .btn-default:focus {
-    background-color: #C8F7C5;
+    border-color: #adc22f;
+    background-color: #f3f3f3;
     background-position: 0 -15px;
     color:#6C7A89;
 }
