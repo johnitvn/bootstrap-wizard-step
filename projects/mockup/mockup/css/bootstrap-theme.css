@@ -158,8 +158,8 @@
 }
 .btn-default:active,
 .btn-default.active {
-    background-color: #C8F7C5;
     border-color: #adc22f;
+    background-color: #f3f3f3;
     color:#6C7A89;
 }
 .btn-default:disabled,
