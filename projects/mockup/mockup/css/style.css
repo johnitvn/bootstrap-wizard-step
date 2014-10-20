@@ -259,3 +259,21 @@ table.payment-table tr>td:last-child{
     font-weight: 700;
     font-size: 14px;
 }
+
+.language{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 60px;
+    padding: 0 12px;
+}
+
+.language>.dropdown>a{
+    color: #fff;
+}
+
+.language>.dropdown>.dropdown-menu{
+    right: -10px;
+    position: absolute;
+    left: auto;
+}
