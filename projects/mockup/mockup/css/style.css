@@ -20,15 +20,19 @@ body{
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
 }
-
-.img-header{
-    max-width: 100%;
+.header{
     position: fixed;
-    top: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    left: 0;
+    right: 0;
+    top: 60px;   
     background: #ffffff;
     z-index: 900;
+    height: 90px;
+}
+.img-header{
+    max-width: 100%;
+    padding: 10px;
+    height: 80px;
 }
 
 
