@@ -28,6 +28,7 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     background: #ffffff;
+    z-index: 900;
 }
 
 
