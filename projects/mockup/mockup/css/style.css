@@ -272,6 +272,18 @@ table.payment-table tr>td:last-child{
     font-size: 14px;
 }
 
+.btn-both-dirrect.btn-lg>.pull-left{
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 23px;
+    color: #000;
+}
+.btn-both-dirrect.btn-lg>.pull-right{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 23px;
+}
+
 .language{
     position: absolute;
     top: 0;
@@ -298,7 +310,7 @@ table.payment-table tr>td:last-child{
 }
 
 .image-icon-circle{
-   max-width: 70%;
+    max-width: 70%;
 }
 
 .image-icon-title{
