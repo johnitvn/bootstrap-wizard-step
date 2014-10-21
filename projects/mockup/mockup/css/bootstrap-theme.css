@@ -146,19 +146,19 @@
 }
 .btn-default {
     background-color: #fff;
-    border-color: #adc22f;
-    color:#adc22f;
+    border-color: #BCCF00 ;
+    color:#BCCF00 ;
 }
 .btn-default:hover,
 .btn-default:focus {
-    border-color: #adc22f;
+    border-color: #BCCF00 ;
     background-color: #f3f3f3;
     background-position: 0 -15px;
     color:#6C7A89;
 }
 .btn-default:active,
 .btn-default.active {
-    border-color: #adc22f;
+    border-color: #BCCF00 ;
     background-color: #f3f3f3;
     color:#6C7A89;
 }
@@ -169,22 +169,20 @@
 }
 
 .has-primary .input-group-addon{
-    border-color: #adc22f;
+    border-color: #BCCF00 ;
     background: #fff;
-    color: #adc22f;
+    color: #BCCF00 ;
 }
 
 
 .has-primary .form-control {
     border-radius: 2px;
-    border-color: #adc22f;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    border-color: #BCCF00 ;   
 }
 
 .btn-primary {
-    background: #adc22f;
-    border-color: #adc22f;
+    background: #BCCF00;
+    border-color: #BCCF00;
 }
 .btn-primary:hover,
 .btn-primary:focus {
