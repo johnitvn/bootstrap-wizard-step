@@ -158,6 +158,8 @@ body{
     color: #d0d0d0;
 }
 
+
+
 .payment_successful {
     border-top: 2px solid #ddd;
 }
@@ -285,4 +287,21 @@ table.payment-table tr>td:last-child{
     right: -10px;
     position: absolute;
     left: auto;
+}
+
+.icon-menu-text{
+    padding-top: 8px;
+    color:#adc22f;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.image-icon-circle{
+   max-width: 70%;
+}
+
+.image-icon-title{
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 700;    
 }
