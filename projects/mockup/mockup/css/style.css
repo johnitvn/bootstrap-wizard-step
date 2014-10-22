@@ -27,13 +27,15 @@ body{
     right: 0;
     top: 60px;   
     background: #ffffff;
-    z-index: 1030;
+    z-index: 1025;
     height: 90px;
 }
 .img-header{
     max-width: 100%;
-    padding: 10px;
     height: 80px;
+    background: url("../images/header.png") no-repeat;
+    background-size: auto 100%;
+    margin-top: 5px;
 }
 
 
@@ -312,9 +314,10 @@ table.payment-table tr>td:last-child{
 }
 
 .language>.dropdown>.dropdown-menu{
-    right: -10px;
-    position: absolute;
+    position: fixed;
+    right: 0;
     left: auto;
+    z-index: 2000;
 }
 
 .icon-menu-text{
