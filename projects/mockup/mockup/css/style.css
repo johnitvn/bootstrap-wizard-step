@@ -28,16 +28,15 @@ body{
     top: 60px;   
     background: #ffffff;
     z-index: 1025;
-    height: 90px;
+    height: 80px;
 }
 
 .img-header{   
-    background: url("../images/header.png") no-repeat;
-    background-size: 100%;
-    height: 80px;
-    margin-top: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    max-height: 80px;
+    max-width: 100%;
 }
-
 
 .brand-title{
     line-height: 60px;
@@ -319,6 +318,11 @@ table.payment-table tr>td:last-child{
     left: auto;
     z-index: 2000;
 }
+.diver-primary{
+    width: 100%;
+    border-top: 2px solid #BCCF00;
+    margin: 12px 0 12px 0;
+}
 
 .icon-menu-text{
     padding-top: 8px;
@@ -327,12 +331,69 @@ table.payment-table tr>td:last-child{
     font-size: 16px;
 }
 
-.image-icon-circle{
-    max-width: 70%;
-}
 
 .image-icon-title{
     padding-bottom: 20px;
     font-size: 15px;
     font-weight: 700;    
 }
+
+
+.image-icon-circle{
+    border: 2px solid #BCCF00 ; 
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 100px;
+    height: 100px; 
+}
+
+
+.icon-1{    
+    background: url("../images/icons/icon_1.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-2{
+    background: url("../images/icons/icon_2.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-3{    
+    background: url("../images/icons/icon_3.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-4{
+    background: url("../images/icons/icon_4.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-5{
+    background: url("../images/icons/icon_5.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-6{
+    background: url("../images/icons/icon_6.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-7{
+    background: url("../images/icons/icon_7.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-8{
+    background: url("../images/icons/icon_8.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-9{
+    background: url("../images/icons/icon_9.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+
+
