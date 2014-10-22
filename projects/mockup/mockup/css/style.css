@@ -68,6 +68,9 @@ body{
     font-weight: 200;
 }
 
+.image-reject{
+    max-width: 82px;margin-top: 8px;margin-bottom: 8px;
+}
 
 .relative {
     position: relative;
