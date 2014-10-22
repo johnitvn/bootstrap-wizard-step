@@ -33,7 +33,8 @@ body{
 
 .img-header{   
     background: url("../images/header.png") no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
+    height: 80px;
     margin-top: 5px;
 }
 
