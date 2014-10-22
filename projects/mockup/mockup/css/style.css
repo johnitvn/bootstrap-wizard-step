@@ -357,6 +357,7 @@ table.payment-table tr>td:last-child{
     -moz-border-radius: 50%;
     width: 100px;
     height: 100px; 
+    margin: 0 auto;
 }
 
 
