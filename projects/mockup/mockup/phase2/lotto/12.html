@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>Mockup</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css">  
+    <link href="../css/style.css" rel="stylesheet" type="text/css">  
+
+</head>
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="brand-title text-center">WeChat Wallet</div>
+            </div>
+        </div>
+    </header>
+    <div class="container header">
+        <img class="img-header" src="../images/header.png" />
+    </div>
+    <form role="form">
+        <!--Content-->
+        <div class="container" id="content">
+            <div class="text-header text-center row-pading">
+                Lotto<br>Quickpick</h3>
+            </div>
+                        <div class="text-center text-content row-pading">Choose Number of Boards</div>
+                        <div class="row-pading">
+                <div class="relative">
+                    <div class="btn-group btn-block fill-split">
+                        <div class="leadcontainer" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                            <a class="btn btn-primary dropdown-lead  dropdown-toggle"  data-toggle="dropdown"  href="#">
+                                + Click to add more boards
+                            </a>                      
+                        </div>
+                        <a class="btn btn-primary dropdown-append" href="#">    
+                            4
+                        </a>                        
+                    </div>                 
+                    <table class="table table-bordered pick-board-table hidden" >
+                        <tbody>
+                            <tr>
+                                <td><span>1</span></td>
+                                <td><span>2</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>3</span></td>
+                                <td><span>4</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>5</span></td>
+                                <td><span>6</span></td>
+                            </tr> 
+                            <tr>
+                                <td><span>7</span></td>
+                                <td><span>8</span></td>
+                            </tr> 
+                        <tbody>
+                    </table>    
+                </div>
+            </div>
+          <div class="lotto-add">
+                <div></div>
+                <div>@ R3.50 Per Board</div>
+            </div>
+        </div>
+        <!--End Content-->
+    </form>
+
+
+    <script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+        $(".fill-split").click(function() {
+            $(".pick-board-table").toggleClass("hidden");
+        });
+        $(".pick-board-table > tbody> tr>td>span").click(function() {
+            $(".pick-board-table>tbody>tr>td>span.active").removeClass("active");
+            $(this).addClass("active");
+            $(".fill-split>.dropdown-append").html($(this).html());
+            $(".pick-board-table").toggleClass("hidden");
+        })
+        $(".lotto-checkbox > .btn").click(function() {
+            console.log(this);
+            $(this).find("span").toggleClass("glyphicon-ok");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+@import url('fonts.css');
+
+body{
+    font-family:"Open Sans";
+    font-size: 16px;
+    font-weight:400;
+}
+
+.navbar{
+    height: 60px;
+    border-radius: 0;
+    border:none;
+}
+#content{
+    margin-top: 150px;
+    margin-bottom:60px;
+}
+
+.btn{
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 60px;   
+    background: #ffffff;
+    z-index: 1025;
+    height: 72px;
+}
+
+.img-header{   
+    padding-top: 4px;
+    padding-bottom: 4px;
+    max-height: 80px;
+    max-width: 100%;
+}
+
+.brand-title{
+    line-height: 60px;
+    font-size: 16px;
+    color: #f0f0f0 !important;
+}
+
+.navbar-bottom{
+    background: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+}
+.row-pading{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.text-header{
+    font-size: 20px;   
+    font-weight: 700;
+}
+.text-subheader{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text-content{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.relative {
+    position: relative;
+}
+.fill-split .leadcontainer {
+    left: 0;
+    position: absolute;
+    right: 30px;
+}
+.fill-split .dropdown-lead{
+    width: 100%;
+    border-radius: 2px 0 0 2px;
+}
+.fill-split .dropdown-append{
+    width: 30px;
+    float: right;
+    box-sizing: border-box;
+    border-radius: 0 2px 2px 0;
+    border-left: 1px solid #fff;
+}
+.fill-split .dropdown-menu{
+    width: 100%;
+}
+.pick-board-table{
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    z-index: 1000;
+}
+
+.pick-board-table > tbody> tr>td{
+    text-align: center;
+    padding: 8px;
+}
+.pick-board-table > tbody> tr>td>span{
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ddd;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pick-board-table > tbody> tr>td>span.active{
+    border-color: #f00;
+    color: #f00;
+}
+
+.icon{
+    text-align: center;
+    font-size: 24px;
+    color:#fff;
+    line-height: 60px;
+    width: 60px;
+}
+
+.icon-sm{
+    font-size: 18px;
+    line-height: 40px;
+    width: 40px;
+}
+
+.icon-lg{
+    font-size: 32px;
+    line-height: 80px;
+    width: 80px;
+}
+
+.icon-xlg{
+    font-size: 38px;
+    line-height: 100px;
+    width: 100px;
+}
+
+.icon-circle{border-radius: 50%}
+.icon-success{background: #5cb85c}
+.icon-warning{background: #f0ad4e}
+.icon-info{background: #5bc0de}
+.icon-primary{background: #5cb85c}
+.icon-danger{background: #d9534f}
+
+
+.icon-lotto{
+    border: 4px solid #d0d0d0;
+    color: #d0d0d0;
+}
+
+
+
+.payment_successful {
+    border-top: 2px solid #ddd;
+}
+.payment_successful>th{
+    line-height: 40px;
+}
+
+.lotto-ball{
+    width: 25px;
+    height: 25px;
+    margin: 2px 0px;
+    width: 42px;
+    height: 42px;
+
+}
+
+.lotto-ball-xlg{
+    width: 40px;
+    height: 40px; 
+}
+
+.lotto-ball-xlg:hover{
+    border: 1px solid #BCCF00; 
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(165, 194, 7, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(165, 194, 7, .6);
+}
+
+.lotto-ball-xlg.active{
+    border: 2px solid #f00;
+    border-radius: 50%;
+}
+
+table.lotto-board{
+    width: 100%;
+}
+table.lotto-board> tr>td:first-child{
+    width: 40%
+}
+table.lotto-board tr>td:last-child{
+    width: 60%
+}
+.payment_successful>th>span{
+    margin-right: 20px;
+}
+
+table.payment-table tr>td:first-child{
+    width: 40%
+}
+
+table.payment-table tr>td:last-child{
+    width: 60%
+}
+
+
+.game-banner{
+    width: 100%;
+}
+.game-name,
+.game-price{
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 8px;   
+    padding: 8px;
+    font-size: 18px;
+}
+
+.game-price{   
+    font-weight: 500;        
+    font-size: 18px;
+    color: #ffffff;
+    background: #aaa;
+}
+
+
+.game-list>.game-list-item{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #aaa;
+}
+
+.game-list>.game-list-item:first-child{
+    padding-top: 0;
+}
+
+.game-list>.game-list-item:last-child{  
+    border-bottom: none;
+}
+
+.lotto-empty>text{
+    font-size: 8px;
+}
+.table-lotto{   
+    width: 100%;
+}
+.table-lotto td{
+    padding-bottom:8px;
+    border-top: none !important;
+}
+.lotto-add{
+    padding-right: 20px;
+}
+.lotto-add :first-child{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.lotto-add :last-child{
+    margin-bottom: 8px;
+}
+
+.lotto-checkbox>.btn{
+    margin-top: 4px;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.btn-both-dirrect>span.pull-left{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn-both-dirrect.btn-lg>.pull-left{
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 23px;
+    color: #000;
+}
+.btn-both-dirrect.btn-lg>.pull-right{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.language{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 60px;
+    padding: 0 12px;
+}
+
+.language>.dropdown>a{
+    color: #fff;
+}
+
+.language>.dropdown>.dropdown-menu{
+    position: fixed;
+    right: 0;
+    left: auto;
+    z-index: 2000;
+}
+.diver-primary{
+    width: 100%;
+    border-top: 2px solid #BCCF00;
+    margin: 12px 0 12px 0;
+}
+
+.icon-menu-text{
+    padding-top: 8px;
+    color:#adc22f;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.image-icon-title{
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 700;    
+}
+
+
+.image-icon-circle{
+    border: 2px solid #BCCF00 ; 
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 100px;
+    height: 100px; 
+}
+
+
+.icon-1{    
+    background: url("../images/icons/icon_1.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-2{
+    background: url("../images/icons/icon_2.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-3{    
+    background: url("../images/icons/icon_3.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-4{
+    background: url("../images/icons/icon_4.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-5{
+    background: url("../images/icons/icon_5.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-6{
+    background: url("../images/icons/icon_6.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-7{
+    background: url("../images/icons/icon_7.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-8{
+    background: url("../images/icons/icon_8.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.icon-9{
+    background: url("../images/icons/icon_9.png") no-repeat;
+    background-position: 50% 50%;
+}
+
+.buy_selct button {
+width: 100%;
+padding: 10px 0 10px 0px;
+text-align: left;
+font-style: inherit;
+font-size: inherit;
+color: inherit;
+background-color: #a6c306;
+}
+
+
